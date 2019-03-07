@@ -56,15 +56,39 @@
 		A2DC538B22312A5D00AAE5C3 /* Calanques */ = {
 			isa = PBXGroup;
 			children = (
+				A2DC53A222312D5200AAE5C3 /* controllers */,
+				A2DC53A122312D4A00AAE5C3 /* views */,
+				A2DC53A022312D3300AAE5C3 /* models */,
 				A2DC538C22312A5D00AAE5C3 /* AppDelegate.swift */,
-				A2DC538E22312A5D00AAE5C3 /* FirstViewController.swift */,
-				A2DC539022312A5D00AAE5C3 /* SecondViewController.swift */,
 				A2DC539222312A5D00AAE5C3 /* Main.storyboard */,
 				A2DC539522312A5E00AAE5C3 /* Assets.xcassets */,
 				A2DC539722312A5E00AAE5C3 /* LaunchScreen.storyboard */,
 				A2DC539A22312A5E00AAE5C3 /* Info.plist */,
 			);
 			path = Calanques;
+			sourceTree = "<group>";
+		};
+		A2DC53A022312D3300AAE5C3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A2DC53A122312D4A00AAE5C3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A2DC53A222312D5200AAE5C3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2DC538E22312A5D00AAE5C3 /* FirstViewController.swift */,
+				A2DC539022312A5D00AAE5C3 /* SecondViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
