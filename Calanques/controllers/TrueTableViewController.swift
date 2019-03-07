@@ -11,10 +11,16 @@ import UIKit
 class TrueTableViewController: UITableViewController {
     
     var calanques: [Calanque] = []
+    let CELL_ID = "calanqueCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         calanques = CalanqueCollection().all()
+        tableView.backgroundColor = UIColor.clear
+        let bg = UIImageView(frame: view.bounds)
+        bg.image = calanques[0].image
+        bg.contentMode = .scaleAspectFill
+        tableView.backgroundView = bg
     }
 
     // MARK: - Table view data source
@@ -28,13 +34,18 @@ class TrueTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID) as? CalanqueCell {
+            cell.setupCell(calanques[indexPath.row])
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        let calanque = calanques[indexPath.row]
-        cell.textLabel?.text = calanque.name
-        cell.imageView?.image = calanque.image
-        
-        return cell
+            let calanque = calanques[indexPath.row]
+            cell.textLabel?.text = calanque.name
+            cell.imageView?.image = calanque.image
+            return cell
+        }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
