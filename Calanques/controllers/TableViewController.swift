@@ -40,6 +40,16 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == SEGUE_ID, let controller = segue.destination as? DetailController {
+                controller.calanqueReceived = sender as? Calanque
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: SEGUE_ID, sender: calanques[indexPath.row])
+    }
 
     /*
     // MARK: - Navigation

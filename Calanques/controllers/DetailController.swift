@@ -20,7 +20,7 @@ class DetailController: UIViewController {
         guard let calanque = calanqueReceived else { return }
         calanqueImage.image = calanque.image
         
-        let mutable = NSMutableAttributedString(string: calanque.name, attributes: [
+        let mutable = NSMutableAttributedString(string: calanque.name + "\n\n", attributes: [
             .foregroundColor: UIColor.red,
             .font: UIFont.boldSystemFont(ofSize: 20)
         ])
@@ -29,6 +29,7 @@ class DetailController: UIViewController {
             .foregroundColor: UIColor.darkGray
         ]))
         calanqueDesc.attributedText = mutable
+        calanqueDesc.textAlignment = .center
     }
     
 
