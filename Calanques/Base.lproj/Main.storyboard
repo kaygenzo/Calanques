@@ -224,7 +224,13 @@
                             <outlet property="delegate" destination="ri0-Dp-AJa" id="Mp3-o4-rji"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rBF-rd-sCc"/>
+                    <navigationItem key="navigationItem" id="rBF-rd-sCc">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="KUk-SG-kKy">
+                            <connections>
+                                <action selector="reloadClicked:" destination="ri0-Dp-AJa" id="P2k-FI-21n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="uYx-T8-VrO" kind="show" identifier="detail" id="uKJ-n8-aCz"/>
                     </connections>
