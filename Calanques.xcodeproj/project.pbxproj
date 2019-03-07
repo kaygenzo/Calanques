@@ -11,6 +11,7 @@
 		A243BE63223156450040E930 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243BE62223156450040E930 /* CalanqueCell.swift */; };
 		A243BE6522315ABC0040E930 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243BE6422315ABC0040E930 /* RoundedImage.swift */; };
 		A243BE67223163010040E930 /* CalanqueCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243BE66223163010040E930 /* CalanqueCellAlternative.swift */; };
+		A243BE6922316E9F0040E930 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243BE6822316E9F0040E930 /* DetailController.swift */; };
 		A2DC538D22312A5D00AAE5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC538C22312A5D00AAE5C3 /* AppDelegate.swift */; };
 		A2DC539422312A5D00AAE5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DC539222312A5D00AAE5C3 /* Main.storyboard */; };
 		A2DC539622312A5E00AAE5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DC539522312A5E00AAE5C3 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		A243BE62223156450040E930 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
 		A243BE6422315ABC0040E930 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		A243BE66223163010040E930 /* CalanqueCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternative.swift; sourceTree = "<group>"; };
+		A243BE6822316E9F0040E930 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		A2DC538922312A5D00AAE5C3 /* Calanques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calanques.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DC538C22312A5D00AAE5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2DC539322312A5D00AAE5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				A2DC53A922314E3C00AAE5C3 /* TableViewController.swift */,
 				A2DC53AB22314E6800AAE5C3 /* MapController.swift */,
 				A243BE60223152910040E930 /* TrueTableViewController.swift */,
+				A243BE6822316E9F0040E930 /* DetailController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				A2DC53A8223133F600AAE5C3 /* CalanqueCollection.swift in Sources */,
 				A2DC53A4223130CC00AAE5C3 /* Calanque.swift in Sources */,
 				A2DC53AC22314E6800AAE5C3 /* MapController.swift in Sources */,
+				A243BE6922316E9F0040E930 /* DetailController.swift in Sources */,
 				A2DC53AA22314E3C00AAE5C3 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
